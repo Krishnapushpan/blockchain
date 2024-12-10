@@ -1,0 +1,134 @@
+{
+	"compiler": {
+		"version": "0.8.28+commit.7893614a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "Largestnum",
+				"outputs": [
+					{
+						"internalType": "uint16",
+						"name": "",
+						"type": "uint16"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "checkdigit",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint16",
+						"name": "num",
+						"type": "uint16"
+					}
+				],
+				"name": "setDigit",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint16",
+						"name": "num1",
+						"type": "uint16"
+					},
+					{
+						"internalType": "uint16",
+						"name": "num2",
+						"type": "uint16"
+					},
+					{
+						"internalType": "uint16",
+						"name": "num3",
+						"type": "uint16"
+					}
+				],
+				"name": "setNumbers",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "int16",
+						"name": "number",
+						"type": "int16"
+					}
+				],
+				"name": "setnumber",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "signchecking",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Activitys/SmartContracts1/Activity1.sol": "Activity1"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Activitys/SmartContracts1/Activity1.sol": {
+			"keccak256": "0x8165311ea9d88ee0a69a82445d4a0e47bddf9880d24fc9726dd56ef764aeea88",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://b44271e4be74c333ef3f985611bdf920ee1ecd3008c4dd7820a1e697f62dba8f",
+				"dweb:/ipfs/QmeMXVbum8BJsG7mVGKNWonHjLKGEwPH8DsSw22vSAychV"
+			]
+		}
+	},
+	"version": 1
+}

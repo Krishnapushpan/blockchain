@@ -1,0 +1,82 @@
+{
+	"compiler": {
+		"version": "0.8.28+commit.7893614a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "Leapyear",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"internalType": "uint16",
+						"name": "",
+						"type": "uint16"
+					},
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint16",
+						"name": "Year",
+						"type": "uint16"
+					}
+				],
+				"name": "setYear",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Activitys/SmartContracts1/Activity2.sol": "Activity2"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Activitys/SmartContracts1/Activity2.sol": {
+			"keccak256": "0x5f4884960d495992a5ce313384db71ffee01b37b6bc083e2347dad76a244c157",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://b2026e38ffb41cb8a505a090259fd9da89cad4090bd5f71b23f4b679eff51e5f",
+				"dweb:/ipfs/QmRw38gU42qDekcKcwpyXpa6umyTyMvs5r9tALiDUMRPN6"
+			]
+		}
+	},
+	"version": 1
+}
