@@ -1,0 +1,169 @@
+{
+	"compiler": {
+		"version": "0.8.28+commit.7893614a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint16",
+						"name": "_sem",
+						"type": "uint16"
+					},
+					{
+						"internalType": "uint16",
+						"name": "_CGPA",
+						"type": "uint16"
+					},
+					{
+						"internalType": "enum STUDENTS.Dept",
+						"name": "_dep",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint16",
+						"name": "_rollno",
+						"type": "uint16"
+					}
+				],
+				"name": "addstud",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint16",
+						"name": "_sem",
+						"type": "uint16"
+					},
+					{
+						"internalType": "uint16",
+						"name": "_CGPA",
+						"type": "uint16"
+					},
+					{
+						"internalType": "enum STUDENTS.Dept",
+						"name": "_dep",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint16",
+						"name": "_rollno",
+						"type": "uint16"
+					}
+				],
+				"name": "editstud",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint16",
+						"name": "_rollno",
+						"type": "uint16"
+					}
+				],
+				"name": "editstudname",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint16",
+						"name": "_rollno",
+						"type": "uint16"
+					}
+				],
+				"name": "getstud",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint16",
+						"name": "sem",
+						"type": "uint16"
+					},
+					{
+						"internalType": "uint16",
+						"name": "CGPA",
+						"type": "uint16"
+					},
+					{
+						"internalType": "enum STUDENTS.Dept",
+						"name": "dep",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint16",
+						"name": "rollno",
+						"type": "uint16"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Activitys/students/students.sol": "STUDENTS"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Activitys/students/students.sol": {
+			"keccak256": "0x0889d99080b7c44c2ebe4fdf126b151cd4e8d54491ff863e9f07dde3c9b1910c",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://8e0d06b6c6545447388b09067d863a4e67f9693cba69a77e2bf0d886d4b2e252",
+				"dweb:/ipfs/QmUfsZ2hkxVkrFSSLS2MhwueQBzP9oZKsoSJpP8nLbAFqv"
+			]
+		}
+	},
+	"version": 1
+}
