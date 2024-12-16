@@ -13,7 +13,7 @@
 						"type": "uint256"
 					}
 				],
-				"name": "bikeauctions",
+				"name": "carauctions",
 				"outputs": [
 					{
 						"internalType": "string",
@@ -22,7 +22,12 @@
 					},
 					{
 						"internalType": "string",
-						"name": "bike",
+						"name": "car",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "model",
 						"type": "string"
 					},
 					{
@@ -52,7 +57,7 @@
 						"type": "string"
 					}
 				],
-				"name": "changeowner",
+				"name": "changeOwner",
 				"outputs": [],
 				"stateMutability": "payable",
 				"type": "function"
@@ -71,7 +76,12 @@
 					},
 					{
 						"internalType": "string",
-						"name": "_bike",
+						"name": "_car",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_model",
 						"type": "string"
 					},
 					{
@@ -99,7 +109,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Activitys/aution.sol": "Auction"
+			"Activitys/aution.sol": "uction"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -114,11 +124,11 @@
 	},
 	"sources": {
 		"Activitys/aution.sol": {
-			"keccak256": "0x4363c5249531dc373933ccfb4d0829048fd465e2ca46c91d607f2d54229093a6",
+			"keccak256": "0x3b000eb35dc4dbd7cb51cd77a887e0d506d1929210fabf91251fe626a43907e7",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://a24e640ff701a6a6cf773fdf523ad9fcb36f6424537841d9224d4e8f04418293",
-				"dweb:/ipfs/QmeYLfkfeYmMajypRcuVnGQUjTLWxke3aPmqWHPZgcduWv"
+				"bzz-raw://dabb698dceef3d59ca310dc9e30f1dec5070586e41bd84b1e2030bdd7007357d",
+				"dweb:/ipfs/QmPZzPWQSYUTK1ofvkqRomuPtf5aVK9jXVTcWKsvPU5VNu"
 			]
 		}
 	},

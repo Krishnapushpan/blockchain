@@ -2,53 +2,48 @@
 pragma solidity 0.8.28;
 
 contract Auction {
-    struct CarAuction {
-        string ownerName; // Name of the current owner
-        string car;       // Car name
-        string model;     // Car model
-        uint256 price;    // Current highest price
+    struct bikeauction {
+        string ownername; 
+        string bike;       
+        uint256 price;   
+        address payable owneraddress;
     }
 
-    address public admin = msg.sender; // Admin of the contract
-    mapping(uint256 => CarAuction) public carAuctions; // Auction data mapped by car ID
-
-      
-
-    // modifier onlyAdmin() {
-    //     require(msg.sender == admin, "Unauthorized");
-    //     _;
-    // }
-
-
-    // Function to issue a new car for auction
+    address  admin = msg.sender; 
+    mapping(uint256 => bikeauction) public bikeauctions; 
+    
+    //new bike for auction
     function issue(
         uint256 _id,
-        string memory _ownerName,
-        string memory _car,
-        string memory _model,
+        string memory _ownername,
+        string memory _bike,
         uint256 _price
-    ) public  {
-     
-        carAuctions[_id] = CarAuction(_ownerName, _car, _model, _price);
+    ) public {
+        bikeauctions[_id] = bikeauction({
+            ownername: _ownername,
+            bike: _bike,
+            price: _price,
+            owneraddress: payable(msg.sender) // The issuer becomes the initial owner
+        });
     }
 
-    // Function to participate in the auction and update ownership if conditions are met
-    function changeOwner(
+    // update if the condition true
+    function changeowner(
         uint256 _id,
-        string memory _newOwnerName,
-        uint256 _newPrice
-    ) public payable  {
-        CarAuction storage auction = carAuctions[_id];
-                if  (msg.value > auction.price)
-                    {payable (msg.sender).transfer(auction.price);
-                    
-                    auction.ownerName = _newOwnerName;
-                    auction.price = _newPrice;
-                    admin=msg.sender;
-                
-            }
-      
-        
-    }
-    }
+        string memory _newownername
+    ) public payable {
+        bikeauction storage auction = bikeauctions[_id];
 
+        require(msg.value > auction.price, "your price is lower than the current price.");
+
+        // refund the previous owner fund
+        if (auction.price > 0) {
+            auction.owneraddress.transfer(auction.price);
+        }
+
+        // update the auction with the new owner details
+        auction.ownername = _newownername;
+        auction.price = msg.value;
+        auction.owneraddress = payable(msg.sender);
+    }
+}
